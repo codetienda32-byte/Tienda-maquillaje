@@ -1,295 +1,265 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lunaria Beauty</title>
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gliker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Lunaria Beauty</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gliker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Botón hamburguesa para móviles -->
-    <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-    </button>
+  <!-- Botón hamburguesa para móviles -->
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación" aria-controls="navbar-lateral" aria-expanded="false">
+    <i class="fas fa-bars"></i>
+  </button>
 
-    <!-- Marco superior para la imagen -->
-    <div class="marco-imagen">
-        <img src="images/estilo2.jpg" alt="Lunaria Beauty">
+  <!-- Marco superior para la imagen -->
+  <div class="marco-imagen">
+    <img src="images/estilo2.jpg" alt="Lunaria Beauty">
+  </div>
+
+  <!-- Barra de navegación lateral -->
+  <nav class="navbar-lateral" id="navbar-lateral" role="navigation" aria-label="Navegación principal">
+    <div class="nav-logo">
+      <img src="images/Logo.png" alt="Lunaria Logo">
     </div>
-
-    <!-- Barra de navegación lateral -->
-    <nav class="navbar-lateral" id="navbar-lateral">
-        <div class="nav-logo">
-            <img src="images/Logo.png" alt="Lunaria Logo">
-        </div>
-        <ul class="nav-menu">
-            <li><a href="#inicio" class="nav-link active"><i class="fas fa-home"></i> <span>Inicio</span></a></li>
-            <li><a href="#sobre-nosotros" class="nav-link"><i class="fas fa-moon"></i> <span>Sobre Nosotros</span></a></li>
-            <li><a href="#nuestra-promesa" class="nav-link"><i class="fas fa-heart"></i> <span>Nuestra Promesa</span></a></li>
-            <li><a href="#coleccion" class="nav-link"><i class="fas fa-palette"></i> <span>Colección</span></a></li>
-            <li><a href="#comunidad" class="nav-link"><i class="fas fa-users"></i> <span>Comunidad</span></a></li>
-            <li><a href="#lunaria-lovers" class="nav-link"><i class="fas fa-camera"></i> <span>Lunaria Lovers</span></a></li>
-        </ul>
-        <div class="nav-footer">
-            <p>Síguenos</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Contenido principal -->
-    <main class="main-content">
-        <!-- Sección principal -->
-        <header id="inicio" class="hero">
-            <div class="hero-content">
-                <h1>LUNARIA BEAUTY</h1>
-                <p class="frase">"Brilla con tu propia luz"</p>
-                <div class="options">
-                    <a href="#coleccion" class="hero-link">
-                        <span class="icon">💋</span> Ver colección completa
-                    </a>
-                    <a href="#sobre-nosotros" class="hero-link">
-                        <span class="icon">🌿</span> Conoce nuestra historia
-                    </a>
-                </div>
-            </div>
-            <div class="hero-img">
-                <img src="images/estilo1.jpg" alt="Modelo Lunaria Beauty">
-            </div>
-        </header>
-
-        <!-- Sobre nosotros -->
-        <section id="sobre-nosotros" class="sobre-nosotros seccion">
-            <div class="sobre-nosotros__bg"></div> <!-- capa imagen -->
-            <div class="sobre-nosotros__content"> <!-- capa texto -->
-                <h2>Sobre nosotros</h2>
-                <p>
-                    Lunaria Beauty es una marca de maquillaje inspirada en la belleza natural
-                    y los ciclos de la luna. Nuestros productos están diseñados para resaltar
-                    tu brillo único con fórmulas veganas, libres de crueldad animal y
-                    enriquecidas con ingredientes naturales.
-                </p>
-            </div>
-        </section>
-
-        <!-- Nuestra promesa -->
-        <section id="nuestra-promesa" class="nuestra-promesa seccion">
-            <h2>Nuestra promesa</h2>
-            <div class="promesa-grid">
-                <div class="promesa-item">
-                    <i class="fas fa-leaf" style="color: #4CAF50;"></i>
-                    <h3>100% vegano</h3>
-                    <p>Productos libres de ingredientes de origen animal</p>
-                </div>
-                <div class="promesa-item">
-                    <i class="fas fa-heart" style="color: #e91e63;"></i>
-                    <h3>Libre de crueldad</h3>
-                    <p>Nunca probamos en animales</p>
-                </div>
-                <div class="promesa-item">
-                    <i class="fas fa-recycle" style="color: #009688;"></i>
-                    <h3>Envases reciclables</h3>
-                    <p>Comprometidos con el medio ambiente</p>
-                </div>
-                <div class="promesa-item">
-                    <i class="fas fa-tint" style="color: #2196F3;"></i>
-                    <h3>Hipoalergénico</h3>
-                    <p>Formulado para todo tipo de piel</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Colección destacada -->
-        <section id="coleccion" class="coleccion seccion">
-            <h2>
-                Colección destacada: <span class="titulo-luna">"Luna Llena"</span>
-            </h2>
-            <p>La colección "Luna Llena" está pensada para brillar en tus momentos más importantes. Colores intensos,
-                acabados luminosos y fórmulas que duran toda la noche.</p>
-            <div class="marco-esquina">
-                <img src="images/rostro.jpg" alt="Decoración Luna Llena">
-            </div>
-
-            <div class="productos">
-                <!-- Producto 1 -->
-                <div class="producto">
-                    <img src="images/icono3.png" alt="Base líquida Lunaria">
-                    <h3>Base Líquida Lunaria</h3>
-                    <p class="desc">Base líquida de cobertura media con acabado natural</p>
-                    <p class="precio">$99</p>
-                    <button onclick="agregarCarrito('Base Líquida Lunaria', 99)">Agregar al Carrito</button>
-                </div>
-
-                <!-- Producto 2 -->
-                <div class="producto">
-                    <img src="images/icono2.png" alt="Iluminador Lunaria">
-                    <h3>Iluminador Lunaria</h3>
-                    <p class="desc">Iluminador en crema con reflejos dorados y plateados.</p>
-                    <p class="precio">$68</p>
-                    <button onclick="agregarCarrito('Iluminador Lunaria', 68)">Agregar al Carrito</button>
-                </div>
-
-                <!-- Producto 3 -->
-                <div class="producto">
-                    <img src="images/icono1.png" alt="Paleta de sombras Lunaria">
-                    <h3>Paleta de Sombras</h3>
-                    <p class="desc">Paleta de sombras con 12 tonos inspirados en la noche estrellada.</p>
-                    <p class="precio">$200</p>
-                    <button onclick="agregarCarrito('Paleta de Sombras', 200)">Agregar al Carrito</button>
-                </div>
-
-                <!-- Producto 4 -->
-                <div class="producto">
-                    <img src="images/icono4.png" alt="Labial Lunaria">
-                    <h3>Labial Líquido</h3>
-                    <p class="desc">Labial líquido de larga duración en 10 tonos celestiales.</p>
-                    <p class="precio">$75</p>
-                    <button onclick="agregarCarrito('Labial Líquido', 75)">Agregar al Carrito</button>
-                </div>
-
-                <!-- Producto 5 -->
-                <div class="producto">
-                    <img src="images/icono5.png" alt="Rubor Lunaria">
-                    <h3>Rubor en Polvo</h3>
-                    <p class="desc">Rubor en polvo con acabado rosa</p>
-                    <p class="precio">$52</p>
-                    <button onclick="agregarCarrito('Rubor en Polvo', 52)">Agregar al Carrito</button>
-                </div>
-
-                <!-- Producto 6 -->
-                <div class="producto">
-                    <img src="images/icono6.png" alt="Delineador Lunaria">
-                    <h3>Delineador de Ojos</h3>
-                    <p class="desc">Delineador líquido de punta fina para un trazo preciso y definido.</p>
-                    <p class="precio">$45</p>
-                    <button onclick="agregarCarrito('Delineador de Ojos', 45)">Agregar al Carrito</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Únete a la comunidad -->
-        <section id="comunidad" class="comunidad seccion">
-            <h2>Únete a la comunidad Lunaria</h2>
-            <p>Recibe tips de maquillaje, descuentos exclusivos y acceso anticipado a nuestras nuevas colecciones.</p>
-            <form class="form-comunidad">
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <button type="submit" class="btn-comunidad">🖤 Unirme</button>
-            </form>
-        </section>
-
-        <!-- Lunaria Lovers -->
-        <section id="lunaria-lovers" class="lunaria-lovers seccion">
-            <h2>Lunaria Lovers</h2>
-            <p>Muéstranos tu brillo 🌙<br>Usa el hashtag <strong>#MiBrilloLunaria</strong> y podrías aparecer en nuestra
-                galería oficial.</p>
-            <div class="galeria">
-                <div class="galeria-item">
-                    <img src="images/mibrillo1.jpg" alt="Maquilladora Lunaria">
-                    <div class="galeria-overlay">
-                        <span>#MiBrilloLunaria</span>
-                    </div>
-                </div>
-                <div class="galeria-item">
-                    <img src="images/mibrillo2.jpg" alt="Maquilladora Lunaria">
-                    <div class="galeria-overlay">
-                        <span>#MiBrilloLunaria</span>
-                    </div>
-                </div>
-                <div class="galeria-item">
-                    <img src="images/mibrillo3.jpg" alt="Maquilladora Lunaria">
-                    <div class="galeria-overlay">
-                        <span>#MiBrilloLunaria</span>
-                    </div>
-                </div>
-                <div class="galeria-item">
-                    <img src="images/mibrillo4.jpg" alt="Maquilladora Lunaria">
-                    <div class="galeria-overlay">
-                        <span>#MiBrilloLunaria</span>
-                    </div>
-                </div>
-                <div class="galeria-item">
-                    <img src="images/mibrillo5.jpg" alt="Maquilladora Lunaria">
-                    <div class="galeria-overlay">
-                        <span>#MiBrilloLunaria</span>
-                    </div>
-                </div>
-                <div class="galeria-item">
-                    <img src="images/mibrillo6.jpg" alt="Maquilladora Lunaria">
-                    <div class="galeria-overlay">
-                        <span>#MiBrilloLunaria</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <p>© 2025 Lunaria Beauty · Todos los derechos reservados</p>
-        </footer>
-    </main>
-
-    <!-- Ícono flotante de carrito lunar -->
-    <div class="carrito-flotante" id="carrito-flotante" onclick="abrirCarrito()">
-        <img src="images/icono-carrito.png" alt="Carrito Lunaria" />
-        <span id="contador">0</span>
+    <ul class="nav-menu">
+      <li><a href="#inicio" class="nav-link active"><i class="fas fa-home" aria-hidden="true"></i> <span>Inicio</span></a></li>
+      <li><a href="#sobre-nosotros" class="nav-link"><i class="fas fa-moon" aria-hidden="true"></i> <span>Sobre Nosotros</span></a></li>
+      <li><a href="#nuestra-promesa" class="nav-link"><i class="fas fa-heart" aria-hidden="true"></i> <span>Nuestra Promesa</span></a></li>
+      <li><a href="#coleccion" class="nav-link"><i class="fas fa-palette" aria-hidden="true"></i> <span>Colección</span></a></li>
+      <li><a href="#comunidad" class="nav-link"><i class="fas fa-users" aria-hidden="true"></i> <span>Comunidad</span></a></li>
+      <li><a href="#lunaria-lovers" class="nav-link"><i class="fas fa-camera" aria-hidden="true"></i> <span>Lunaria Lovers</span></a></li>
+    </ul>
+    <div class="nav-footer">
+      <p>Síguenos</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
     </div>
+  </nav>
 
-    <!-- Modal del carrito mejorado -->
-    <div class="modal" id="modalCarrito">
-        <div class="modal-contenido">
-            <button class="cerrar" onclick="cerrarCarrito()">X</button>
-            <h3><i class="fas fa-shopping-bag"></i> Tu carrito Lunaria</h3>
-            
-            <div class="carrito-items" id="listaCarrito">
-                <!-- Los productos se agregarán aquí dinámicamente -->
-            </div>
-            
-            <div class="carrito-total">
-                <p><strong>Total: $<span id="total">0</span></strong></p>
-            </div>
-            
-            <div class="datos-compra">
-                <h4><i class="fas fa-user"></i> Información de envío</h4>
-                <div class="form-group">
-                    <input type="text" placeholder="Nombre completo" id="nombre" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" placeholder="Teléfono" id="telefono" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" placeholder="Dirección de envío" id="direccion" required>
-                </div>
-                
-                <h4><i class="fas fa-credit-card"></i> Método de pago</h4>
-                <div class="metodos-pago">
-                    <div class="metodo-pago" onclick="seleccionarMetodo('nequi')">
-                        <img src="images/Nequi.png" alt="Nequi">
-                        <span>Nequi</span>
-                    </div>
-                    <div class="metodo-pago" onclick="seleccionarMetodo('paypal')">
-                        <img src="images/Paypal.png" alt="PayPal">
-                        <span>PayPal</span>
-                    </div>
-                </div>
-                <input type="hidden" id="metodo-pago" value="">
-            </div>
-            
-            <button class="btn-finalizar" onclick="finalizarCompra()">
-                <i class="fas fa-paper-plane"></i> Finalizar compra
-            </button>
+  <!-- Contenido principal -->
+  <main class="main-content" id="contenido">
+    <!-- Sección principal -->
+    <header id="inicio" class="hero seccion">
+      <div class="hero-content">
+        <h1>LUNARIA BEAUTY</h1>
+        <p class="frase">"Brilla con tu propia luz"</p>
+        <div class="options">
+          <a href="#coleccion" class="hero-link">
+            <span class="icon">💋</span> Ver colección completa
+          </a>
+          <a href="#sobre-nosotros" class="hero-link">
+            <span class="icon">🌿</span> Conoce nuestra historia
+          </a>
         </div>
+      </div>
+      <div class="hero-img">
+        <img src="images/estilo1.jpg" alt="Modelo Lunaria Beauty">
+      </div>
+    </header>
+
+    <!-- Sobre nosotros -->
+    <section id="sobre-nosotros" class="sobre-nosotros seccion">
+      <div class="sobre-nosotros__bg" aria-hidden="true"></div>
+      <div class="sobre-nosotros__content">
+        <h2>Sobre nosotros</h2>
+        <p>
+          Lunaria Beauty es una marca de maquillaje inspirada en la belleza natural
+          y los ciclos de la luna. Nuestros productos están diseñados para resaltar
+          tu brillo único con fórmulas veganas, libres de crueldad animal y
+          enriquecidas con ingredientes naturales.
+        </p>
+      </div>
+    </section>
+
+    <!-- Nuestra promesa -->
+    <section id="nuestra-promesa" class="nuestra-promesa seccion">
+      <h2>Nuestra promesa</h2>
+      <div class="promesa-grid">
+        <div class="promesa-item">
+          <i class="fas fa-leaf" style="color:#4CAF50;"></i>
+          <h3>100% vegano</h3>
+          <p>Productos libres de ingredientes de origen animal</p>
+        </div>
+        <div class="promesa-item">
+          <i class="fas fa-heart" style="color:#e91e63;"></i>
+          <h3>Libre de crueldad</h3>
+          <p>Nunca probamos en animales</p>
+        </div>
+        <div class="promesa-item">
+          <i class="fas fa-recycle" style="color:#009688;"></i>
+          <h3>Envases reciclables</h3>
+          <p>Comprometidos con el medio ambiente</p>
+        </div>
+        <div class="promesa-item">
+          <i class="fas fa-tint" style="color:#2196F3;"></i>
+          <h3>Hipoalergénico</h3>
+          <p>Formulado para todo tipo de piel</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Colección -->
+    <section id="coleccion" class="coleccion seccion">
+      <h2>
+        Colección destacada: <span class="titulo-luna">"Luna Llena"</span>
+      </h2>
+      <p>La colección "Luna Llena" está pensada para brillar en tus momentos más importantes. Colores intensos,
+        acabados luminosos y fórmulas que duran toda la noche.</p>
+
+      <div class="marco-esquina" aria-hidden="true">
+        <img src="images/rostro.jpg" alt="Decoración Luna Llena">
+      </div>
+
+      <div class="productos" role="list">
+        <div class="producto" role="listitem">
+          <img src="images/icono3.png" alt="Base líquida Lunaria">
+          <h3>Base Líquida Lunaria</h3>
+          <p class="desc">Base líquida de cobertura media con acabado natural</p>
+          <p class="precio">$99</p>
+          <button onclick="agregarCarrito('Base Líquida Lunaria', 99)">Agregar al Carrito</button>
+        </div>
+        <div class="producto" role="listitem">
+          <img src="images/icono2.png" alt="Iluminador Lunaria">
+          <h3>Iluminador Lunaria</h3>
+          <p class="desc">Iluminador en crema con reflejos dorados y plateados.</p>
+          <p class="precio">$68</p>
+          <button onclick="agregarCarrito('Iluminador Lunaria', 68)">Agregar al Carrito</button>
+        </div>
+        <div class="producto" role="listitem">
+          <img src="images/icono1.png" alt="Paleta de sombras Lunaria">
+          <h3>Paleta de Sombras</h3>
+          <p class="desc">Paleta de sombras con 12 tonos inspirados en la noche estrellada.</p>
+          <p class="precio">$200</p>
+          <button onclick="agregarCarrito('Paleta de Sombras', 200)">Agregar al Carrito</button>
+        </div>
+        <div class="producto" role="listitem">
+          <img src="images/icono4.png" alt="Labial Lunaria">
+          <h3>Labial Líquido</h3>
+          <p class="desc">Labial líquido de larga duración en 10 tonos celestiales.</p>
+          <p class="precio">$75</p>
+          <button onclick="agregarCarrito('Labial Líquido', 75)">Agregar al Carrito</button>
+        </div>
+        <div class="producto" role="listitem">
+          <img src="images/icono5.png" alt="Rubor Lunaria">
+          <h3>Rubor en Polvo</h3>
+          <p class="desc">Rubor en polvo con acabado rosa</p>
+          <p class="precio">$52</p>
+          <button onclick="agregarCarrito('Rubor en Polvo', 52)">Agregar al Carrito</button>
+        </div>
+        <div class="producto" role="listitem">
+          <img src="images/icono6.png" alt="Delineador Lunaria">
+          <h3>Delineador de Ojos</h3>
+          <p class="desc">Delineador líquido de punta fina para un trazo preciso y definido.</p>
+          <p class="precio">$45</p>
+          <button onclick="agregarCarrito('Delineador de Ojos', 45)">Agregar al Carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comunidad -->
+    <section id="comunidad" class="comunidad seccion">
+      <h2>Únete a la comunidad Lunaria</h2>
+      <p>Recibe tips de maquillaje, descuentos exclusivos y acceso anticipado a nuestras nuevas colecciones.</p>
+      <form class="form-comunidad">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <button type="submit" class="btn-comunidad">🖤 Unirme</button>
+      </form>
+    </section>
+
+    <!-- Lunaria Lovers -->
+    <section id="lunaria-lovers" class="lunaria-lovers seccion">
+      <h2>Lunaria Lovers</h2>
+      <p>Muéstranos tu brillo 🌙<br>Usa el hashtag <strong>#MiBrilloLunaria</strong> y podrías aparecer en nuestra
+        galería oficial.</p>
+      <div class="galeria">
+        <div class="galeria-item">
+          <img src="images/mibrillo1.jpg" alt="Maquilladora Lunaria 1">
+          <div class="galeria-overlay"><span>#MiBrilloLunaria</span></div>
+        </div>
+        <div class="galeria-item">
+          <img src="images/mibrillo2.jpg" alt="Maquilladora Lunaria 2">
+          <div class="galeria-overlay"><span>#MiBrilloLunaria</span></div>
+        </div>
+        <div class="galeria-item">
+          <img src="images/mibrillo3.jpg" alt="Maquilladora Lunaria 3">
+          <div class="galeria-overlay"><span>#MiBrilloLunaria</span></div>
+        </div>
+        <div class="galeria-item">
+          <img src="images/mibrillo4.jpg" alt="Maquilladora Lunaria 4">
+          <div class="galeria-overlay"><span>#MiBrilloLunaria</span></div>
+        </div>
+        <div class="galeria-item">
+          <img src="images/mibrillo5.jpg" alt="Maquilladora Lunaria 5">
+          <div class="galeria-overlay"><span>#MiBrilloLunaria</span></div>
+        </div>
+        <div class="galeria-item">
+          <img src="images/mibrillo6.jpg" alt="Maquilladora Lunaria 6">
+          <div class="galeria-overlay"><span>#MiBrilloLunaria</span></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Lunaria Beauty · Todos los derechos reservados</p>
+    </footer>
+  </main>
+
+  <!-- Ícono flotante de carrito lunar -->
+  <div class="carrito-flotante" id="carrito-flotante" onclick="abrirCarrito()" aria-label="Abrir carrito">
+    <img src="images/icono-carrito.png" alt="Carrito Lunaria">
+    <span id="contador" aria-live="polite">0</span>
+  </div>
+
+  <!-- Modal del carrito mejorado -->
+  <div class="modal" id="modalCarrito" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-contenido">
+      <button class="cerrar" aria-label="Cerrar carrito" onclick="cerrarCarrito()">X</button>
+      <h3><i class="fas fa-shopping-bag"></i> Tu carrito Lunaria</h3>
+      <div class="carrito-items" id="listaCarrito"></div>
+      <div class="carrito-total">
+        <p><strong>Total: $<span id="total">0</span></strong></p>
+      </div>
+      <div class="datos-compra">
+        <h4><i class="fas fa-user"></i> Información de envío</h4>
+        <div class="form-group">
+          <input type="text" placeholder="Nombre completo" id="nombre" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Teléfono" id="telefono" required>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Dirección de envío" id="direccion" required>
+        </div>
+
+        <h4><i class="fas fa-credit-card"></i> Método de pago</h4>
+        <div class="metodos-pago">
+          <div class="metodo-pago" onclick="seleccionarMetodo('nequi')">
+            <img src="images/Nequi.png" alt="Nequi">
+            <span>Nequi</span>
+          </div>
+          <div class="metodo-pago" onclick="seleccionarMetodo('paypal')">
+            <img src="images/Paypal.png" alt="PayPal">
+            <span>PayPal</span>
+          </div>
+        </div>
+        <input type="hidden" id="metodo-pago" value="">
+      </div>
+      <button class="btn-finalizar" onclick="finalizarCompra()">
+        <i class="fas fa-paper-plane"></i> Finalizar compra
+      </button>
     </div>
-    <script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>

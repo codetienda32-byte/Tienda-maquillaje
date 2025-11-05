@@ -989,6 +989,9 @@ body{
 @media (max-width:1200px){
   .hero-img{ flex-basis:360px }
   .hero h1{ font-size:3.8rem }
+  .productos {
+    justify-content: center;
+  }
 }
 
 @media (max-width:1000px){
@@ -1188,5 +1191,10 @@ body{
   
   .sobre-nosotros__content {
     padding: 2rem 1rem;
+  }
+  
+  .marco-imagen {
+    aspect-ratio: 16 / 9; /* Más proporcional en móviles */
+    margin: 10px auto 0;
   }
 }

@@ -289,5 +289,4 @@ document.getElementById('modalCarrito').addEventListener('click', function(e) {
   if (e.target === this) {
     cerrarCarrito();
   }
-
 });

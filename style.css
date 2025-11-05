@@ -1198,3 +1198,42 @@ body{
     margin: 10px auto 0;
   }
 }
+
+/* Bloqueo de scroll cuando el menú está abierto */
+html.no-scroll, body.no-scroll { overflow: hidden; }
+
+/* Backdrop del menú lateral en móvil */
+.nav-backdrop{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.35);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .25s ease, visibility .25s ease;
+  z-index: 1000; /* por debajo de la barra (z=1000+) pero encima del contenido */
+}
+.nav-backdrop.visible{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* El efecto “ensanchamiento por hover” SOLO en desktop con puntero fino */
+@media (hover: hover) and (pointer: fine) {
+  .navbar-lateral { width: 80px; }
+  .navbar-lateral:hover { width: 250px; }
+  .navbar-lateral:hover ~ .main-content { margin-left: 250px; }
+}
+
+/* En móvil: el panel no empuja al contenido; se superpone */
+@media (max-width: 768px){
+  .navbar-lateral{
+    width: 280px;                 /* ancho real del panel */
+    transform: translateX(-100%); /* oculto fuera de pantalla */
+    will-change: transform;
+  }
+  .navbar-lateral.active{ transform: translateX(0); }
+
+  /* ¡Clave! Aunque “simule” hover en móvil, NO debe mover el main */
+  .main-content{ margin-left: 0 !important; }
+  .navbar-lateral:hover ~ .main-content{ margin-left: 0 !important; }
+}

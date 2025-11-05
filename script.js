@@ -150,7 +150,7 @@ function finalizarCompra() {
   mensaje += `¡Espero tu confirmación! 🌙`;
 
   // 🔽 Cambia este número por tu número de WhatsApp (sin + ni espacios)
-  const numero = "573153693952";
+  const numero = "573165699145";
 
   const url = `https://wa.me/${numero}?text=${mensaje}`;
   window.open(url, "_blank");
@@ -289,4 +289,5 @@ document.getElementById('modalCarrito').addEventListener('click', function(e) {
   if (e.target === this) {
     cerrarCarrito();
   }
+
 });
